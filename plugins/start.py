@@ -88,12 +88,12 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(" Movie Channel ", callback_data = "channel"),
-                    InlineKeyboardButton(" Leak", callback_data = "leak")
+                    InlineKeyboardButton(" Movie Channel ", url= f"https://t.me/Movies_x_store"),
+                    InlineKeyboardButton(" Leak Video Hub", url= "t.me/LeakedVideosHub")
                 ],[
                     InlineKeyboardButton("😊 About Me", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
+                  ]
             ]
         )
         await message.reply_text(
